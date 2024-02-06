@@ -7,11 +7,15 @@ export interface SocialLink {
   icon: string;
 }
 
-export interface HeroApiProps {
+export interface HeroApi {
   title: string;
   subtitle: string;
   img: string;
   btntext: string;
   videos: Video[];
   sociallinks: SocialLink[];
+}
+
+export interface HeroApiProps {
+  heroapi: HeroApi;
 }

@@ -1,13 +1,15 @@
 import "./App.css";
-import { Hero } from "./components";
+import { Hero, Sales } from "./components";
 
-import { heroapi } from "./data/data.jsx";
+import { heroapi, popularsales, toprateslaes } from "./data/data.jsx";
 
 function App() {
   console.log(heroapi);
   return (
     <main>
-      <Hero heroapi={heroapi}/>
+      <Hero heroapi={heroapi} />
+      <Sales sales={popularsales}/>
+      <Sales sales={toprateslaes}/>
     </main>
   );
 }
